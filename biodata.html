@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri | UTS Pemrograman Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="nav-header">
+        <div class="container nav-container glass-card" style="padding: 1rem 2rem; border-radius: 50px;">
+            <div class="logo">PORT<span>FOLIO.</span></div>
+            <nav class="nav-links">
+                <a href="index.html">Logout</a>
+                <a href="#about" class="btn btn-primary" style="padding: 0.5rem 1.2rem;">Kontak Saya</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="profile-section">
+            <div class="profile-img-container">
+                <img src="img/profile.jpg" alt="Profile Picture" class="profile-img">
+            </div>
+            <div class="profile-info">
+                <span class="subtitle">Halo, Saya</span>
+                <h1>M. Ilham Ramdani</h1>
+                <p>Mahasiswa Universitas Hamzanwadi jurusan Sistem Informasi. Saya adalah pribadi yang senang dengan hal
+                    hal yang berkaitan dengan bisnis, dan saya suka berteman atau partner dengan orang yang suka
+                    berbisnis</p>
+
+
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#" class="btn btn-primary">Unduh CV</a>
+                    <a href="#" class="btn glass-card" style="padding: 0.8rem 1.5rem;">Lihat Karya</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid Content -->
+        <div class="content-grid">
+            <!-- Pendidikan -->
+            <div class="card glass-card">
+                <h2><i class="fas fa-graduation-cap"></i> Pendidikan</h2>
+                <div class="list-item">
+                    <h4>Universitas Hamzanwadi</h4>
+                    <p>S1 Sistem Informasi (2023 - Sekarang)</p>
+                </div>
+                <div class="list-item">
+                    <h4>MA NWDI Lepak</h4>
+                    <p>Lulusan Tahun 2024</p>
+                </div>
+            </div>
+
+            <!-- Skill -->
+            <div class="card glass-card">
+                <h2><i class="fas fa-code"></i> Keahlian</h2>
+                <div class="skills-wrapper">
+                    <span class="skill-tag">Bernegosiasi</span>
+                    <span class="skill-tag">Berbisnis</span>
+                    <span class="skill-tag">Mengelola keuangan</span>
+                    <span class="skill-tag">publik speaking</span>
+                </div>
+            </div>
+
+            <!-- Pengalaman -->
+            <div class="card glass-card">
+                <h2><i class="fas fa-briefcase"></i> Pengalaman</h2>
+                <div class="list-item">
+                    <h4>Menjalankan sebuah usaha</h4>
+                    <p>sebagai sales es krim kelilig sejak tahun 2024</p>
+                </div>
+                <div class="list-item">
+                    <h4>Menjadi Bendahara Osis</h4>
+                    <p>di SMPN 1 Sakra tahun 2019-2020 dan di MA NWDI Lepak tahun 2022-2023</p>
+                </div>
+            </div>
+
+            <!-- Hobi & Kontak (Combined) -->
+            <div class="card glass-card card-span-2">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div>
+                        <h2><i class="fas fa-heart"></i> Hobi</h2>
+                        <ul style="list-style: none; color: var(--text-muted);">
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle"
+                                    style="color: var(--primary);"></i> Badminton </li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle"
+                                    style="color: var(--primary);"></i> Mancing </li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle"
+                                    style="color: var(--primary);"></i> Outdoor (petualang) </li>
+                        </ul>
+                    </div>
+                    <div id="about">
+                        <h2><i class="fas fa-share-nodes"></i> Sosial Media</h2>
+                        <div class="contact-info">
+                            <div><i class="fas fa-envelope"></i> milhamramdani2511@gmail.com</div>
+                            <div><i class="fab fa-whatsapp"></i> 087850214715</div>
+                            <div><i class="fab fa-instagram"></i> @Ilhmdn.i</div>
+                            <div><i class="fab fa-tiktok"></i> @Sagiboys25</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card glass-card"
+                style="display: flex; align-items: center; justify-content: center; text-align: center;">
+                <div>
+                    <h2 style="justify-content: center;">Mari Berteman!</h2>
+                    <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 1rem;">Klik tombol di bawah
+                        untuk kembali ke halaman utama.</p>
+                    <a href="index.html" class="btn btn-primary" style="font-size: 0.8rem;">Kembali Login</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.8rem;">
+        &copy; 2026 UTS Pemrograman Web Dasar - M. Ilham Ramdani
+    </footer>
+</body>
+
+</html>

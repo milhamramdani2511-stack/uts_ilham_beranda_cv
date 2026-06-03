@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login | UTS Pemrograman Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="login-section">
+        <div class="login-card glass-card">
+            <h2>Selamat Datang</h2>
+            <p>Silahkan login untuk mengakses biodata</p>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" class="form-input" placeholder="Masukkan username..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-input" placeholder="Masukkan password..." required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-login">Login Sekarang</button>
+            </form>
+
+            <script>
+                // ANDA BISA MENENTUKAN USERNAME & PASSWORD DI SINI
+                const VALID_USERNAME = "520318251105";
+                const VALID_PASSWORD = "Ilham25";
+
+                document.getElementById('loginForm').addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    const user = document.getElementById('username').value;
+                    const pass = document.getElementById('password').value;
+
+                    if (user === VALID_USERNAME && pass === VALID_PASSWORD) {
+                        // Jika benar, arahkan ke halaman biodata
+                        window.location.href = "biodata.html";
+                    } else {
+                        // Jika salah, tampilkan pesan error
+                        alert("Username atau Password salah! (Clue: admin / 123)");
+                    }
+                });
+            </script>
+
+            <div style="margin-top: 2rem; text-align: center;">
+                <small style="color: var(--text-muted);">Lupa password? Hubungi admin</small>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
